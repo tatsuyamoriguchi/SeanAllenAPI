@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1A0D9610-2C3D-4740-9C81-6945A6FBDAC3"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EECD6919-5056-4555-8CA8-34C1067C8E8A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SeanAllenAPI/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "EECD6919-5056-4555-8CA8-34C1067C8E8A - 2616884c72e521d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable () async -&gt; () in SeanAllenAPI.ContentView.body.getter : some"
+                  moduleName = "SeanAllenAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tatsuyamoriguchi/Documents/Tutorials/SeanAllenAPI/SeanAllenAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45">
+               </Location>
+               <Location
+                  uuid = "EECD6919-5056-4555-8CA8-34C1067C8E8A - 8b7a65812775e8dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) await resume partial function for closure #2 @Sendable () async -&gt; () in SeanAllenAPI.ContentView.body.getter : some"
+                  moduleName = "SeanAllenAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tatsuyamoriguchi/Documents/Tutorials/SeanAllenAPI/SeanAllenAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45">
+               </Location>
+               <Location
+                  uuid = "EECD6919-5056-4555-8CA8-34C1067C8E8A - a31c66798a4096a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) suspend resume partial function for closure #2 @Sendable () async -&gt; () in SeanAllenAPI.ContentView.body.getter : some"
+                  moduleName = "SeanAllenAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tatsuyamoriguchi/Documents/Tutorials/SeanAllenAPI/SeanAllenAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45">
+               </Location>
+               <Location
+                  uuid = "EECD6919-5056-4555-8CA8-34C1067C8E8A - 783bba03fb5334a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #2 @Sendable () async -&gt; () in SeanAllenAPI.ContentView.body.getter : some"
+                  moduleName = "SeanAllenAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tatsuyamoriguchi/Documents/Tutorials/SeanAllenAPI/SeanAllenAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

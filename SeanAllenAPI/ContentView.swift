@@ -9,25 +9,54 @@ import SwiftUI
 
 // Create UI
 struct ContentView: View {
+    
+    // Need an object to store GitHubUser data from getUser()
+    @State private var user: GitHubUser?
+    
     var body: some View {
         VStack(spacing: 20) {
-            Circle()
-                .foregroundColor(.secondary)
-                .frame(width: 120, height: 120)
             
-            Text("User Name")
+            AsyncImage(url: URL(string: user?.avatarUrl ?? "")) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .clipShape(Circle())
+                
+            } placeholder: {
+                Circle()
+                    .foregroundColor(.secondary)
+            }
+            .frame(width: 120, height: 120)
+            
+            //            Text("User Name") // change to display downloaded data.
+            Text(user?.login ?? "Login Placeholder")
                 .bold()
                 .font(.title3)
             
-            Text("This is where the GitHub bio will go. Let's ake it long so it spans two lines.")
+            //            Text("This is where the GitHub bio will go. Let's ake it long so it spans two lines.") // change to display downloaded data.
+            Text(user?.bio ?? "Bio Placeholder")
                 .padding()
             Spacer()
         }
         .padding()
+        // Adds an asynchronous task to perform before this view appear.
+        .task {
+            do {
+                user = try await getUser()
+            } catch GHError.invalidURL {
+                print("invalid URL")
+            } catch GHError.invalidResponse {
+                print("invalid response")
+            } catch GHError.invalidData {
+                print("invalid data")
+            } catch {
+                print("unexpected error")
+            }
+        }
     }
     
-    func getUer() async throws -> GitHubUser {
-        let endpoint = "https://api.githib.com/users/tatsuyamoriguchi"
+    func getUser() async throws -> GitHubUser {
+        let endpoint = "https://api.github.com/users/tatsuyamoriguchi"
         
         // Create url object
         guard let url = URL(string: endpoint) else { throw GHError.invalidURL }
@@ -69,4 +98,4 @@ enum GHError: Error {
     case invalidResponse
     case invalidData
 }
- 
+
